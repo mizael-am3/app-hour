@@ -5,35 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transito</title>
+    <title>Nascionalidade</title>
     <style>
-        * {
-            margin: 0;
-        }
-
         body {
-            background: rgb(19, 4, 55);
+            background: #292629;
             color: white;
-        }
-
-        #velocidade {
-            margin: 1.3rem
-        }
-
-        #verificar {
-            margin-left: 1rem;
+            padding: 2rem;
         }
     </style>
 </head>
 
 <body>
-    <h1>System Multas</h1>
 
-    <input type="number" id="velocidade" placeholder="Qual a velocidade">
-    <input type="button" id="verificar" value="Verificar" onclick="calc()">
-    <div id="result"></div>
+    <h1>Nascionalidade</h1>
 
-    <script src="main.js"></script>
+    <input type="text" id="pais" placeholder="Qual seu país?">
+    <button id="testar" onclick="ok()">Verificar</button>
+    <div id="res"></div>
+
+    <script>
+        function ok() {
+            var resultado = document.querySelector('#res')
+            var nascionalidade = document.querySelector('#pais')
+            var nasc = (nascionalidade.value)
+            
+            if (nasc != 'Brasil'){
+                res.innerHTML = `estranjeiro`
+            } else {
+                res.innerHTML = `BR, é noix`
+            }
+        }
+    </script>
 </body>
 
 </html>

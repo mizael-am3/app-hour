@@ -1,8 +1,9 @@
-function calc() {
-    var resultado = document.querySelector('#result')
-    var textImput = document.querySelector('#velocidade')
-    var velocidade = (textImput.value)
-    if (velocidade > 80) {
-        resultado.innerHTML = `Sua velocidade é ${velocidade}  você foi multado`
+function ok() {
+    var resultado = document.querySelector('#res')
+    var nascionalidade = document.querySelector('#pais')
+    if (nascionalidade != 'Brasil') {
+        res.innerHTML = `Seja bem vindo estrangeiro`
+    } else {
+        res.innerHTML = `Patria amada ${nascionalidade}`
     }
 }
