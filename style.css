@@ -1,0 +1,46 @@
+body {
+margin: 1.2rem;
+background:#f5f0f0;
+font-family: 'Roboto Mono', monospace;
+color: #0D0D0D;
+
+}
+header {
+ text-align: center;
+}
+
+
+section {
+    background:#aea8a8;
+    height:20rem;
+    width: 20rem;
+    padding: 1.5rem;
+    border: 0.24rem solid #0D0D0D;
+    border-radius: 2rem;
+    margin: 3.2rem auto;
+    
+}
+
+#msgs {
+    text-align: center;
+    font-weight: 500;
+}
+#gifs {
+    text-align: center;   
+}
+#gif {
+    /* max-width:15rem; */
+    /* max-height:15rem; */
+    width:15rem;
+    height:15rem;
+    border-radius: 7.5rem;
+    margin-top:1.2rem ;
+
+    
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: italic;
+}
